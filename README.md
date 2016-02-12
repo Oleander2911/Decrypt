@@ -12,7 +12,7 @@ After this add the service provider to the config/app.php file like so `Oleander
 
 And lastly add an alias in the same file(config/app.php) like so `'Decrypt' => 'Oleander29\Decrypt\DecryptServiceFacade'`
 
-Remember to add a variable to your model so the package can see what fields in can decrypt and what it should not, you need to add the following variable: 
+Remember to add a variable to your model so the package can see what fields it can decrypt and what it should not, you need to add the following variable: 
 
 ` protected $encryptable = [
         'field1',
