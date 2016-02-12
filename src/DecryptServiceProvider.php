@@ -1,9 +1,9 @@
 <?php
 
-namespace Oleander\Decrypt\Src;
+namespace Oleander29\Decrypt\Src;
 
 use Illuminate\Support\ServiceProvider;
-use Oleander\Decrypt\DecryptService;
+use Oleander29\Decrypt\DecryptService;
 class DecryptServiceProvider extends ServiceProvider
 {
     protected $DecryptService;

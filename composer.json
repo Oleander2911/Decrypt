@@ -3,6 +3,7 @@
     "description": "Laravel package to decrypt an Eloquent model or collection based on a variable set in the model class",
     "type": "laravel-package",
     "license": "MIT",
+    "version": 1.0,
     "authors": [
         {
             "name": "Christoffer Oleander Nielsen",
@@ -10,5 +11,15 @@
         }
     ],
     "minimum-stability": "stable",
-    "require": {}
+    "require": {},
+    "autoload": {
+    "psr-4": {
+      "Oleander29\\Decrypt\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  }
 }

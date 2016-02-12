@@ -1,6 +1,6 @@
 <?php
 
-namespace Oleander\Decrypt\Src;
+namespace Oleander29\Decrypt\Src;
 
 use Illuminate\Support\Facades\Facade;
 
