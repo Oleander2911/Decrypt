@@ -56,7 +56,7 @@ class DecryptService{
     public function model($model){
         $this->encryptable_array = $model->getEncryptable();
 
-        return array_map(array($this, 'modelDecrypterCallback'), $model, array_keys($model));
+        return $this->modelDecrypterCallback($model);
 
     }
 
