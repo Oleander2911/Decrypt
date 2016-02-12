@@ -1,6 +1,6 @@
 # Decrypt
 
-This is a little laravel package which takes a collection or an Eloquent model and decrypts the fields of either every model in the collection which are defined in the $encryptable variable in your model(read below), it returns the model or collection as an array, so it is mostly usable when wanting to return some json, all you need to do is encode it.
+This is a little laravel package which takes a collection or an Eloquent model and decrypts the fields of either every model in the collection which are defined in the $encryptable variable in your model(read below) or a model depending of what function you use, it returns the model or collection as an array, so it is mostly usable when wanting to return some json like if you are creating an API, all you need to do is encode it.
 
 ## Installation
 
