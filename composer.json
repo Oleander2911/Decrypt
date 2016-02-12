@@ -1,5 +1,5 @@
 {
-    "name": "oleander/decrypt",
+    "name": "oleander29/decrypt",
     "description": "Laravel package to decrypt an Eloquent model or collection based on a variable set in the model class",
     "type": "laravel-package",
     "license": "MIT",
