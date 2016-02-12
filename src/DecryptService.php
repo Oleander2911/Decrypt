@@ -1,5 +1,5 @@
 <?php
-namespace Oleander29\Decrypt\Src;
+namespace Oleander29\Decrypt;
 
 use Illuminate\Support\Facades\Crypt;
 class DecryptService{
