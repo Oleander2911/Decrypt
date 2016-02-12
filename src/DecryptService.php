@@ -11,20 +11,33 @@ class DecryptService{
 
     }
 
-    public function modelDecrypterCallback($value, $key){
-        if(in_array($key, $this->encryptable_array)){
+    public function modelDecrypterCallback($array){
 
-            return Crypt::decrypt($value);
+        $new_array = [];
+
+        foreach($array as $key => $value){
+            if(in_array($key, $this->encryptable_array)){
+
+                $new_array[$key] = Crypt::decrypt($value);
+            }
+            else{
+                $new_array[$key] = $value;
+            }
         }
-        else{
-            return $value;
-        }
+
+        return $new_array;
 
     }
 
     public function collectionDecrypterCallback($array){
 
-        return array_map(array($this, 'modelDecrypterCallback'), $array, array_keys($array));
+        $new_array = [];
+        foreach($array as $value){
+           $new_array[] = $this->modelDecrypterCallback($value);
+        }
+
+
+        return $new_array;
 
     }
 
@@ -34,7 +47,7 @@ class DecryptService{
 
         $this->encryptable_array =  $collection->first()->getEncryptable();
         $array = $collection->toArray();
-        return array_map(array($this, 'collectionDecrypterCallback'), $array);
+        return $this->collectionDecrypterCallback($array);
 
 
 
