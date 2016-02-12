@@ -1,0 +1,14 @@
+{
+    "name": "oleander/decrypt",
+    "description": "Laravel package to decrypt an Eloquent model or collection based on a variable set in the model class",
+    "type": "laravel-package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Christoffer Oleander Nielsen",
+            "email": "kontakt@mboweb.dk"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
